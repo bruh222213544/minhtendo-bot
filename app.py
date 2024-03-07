@@ -3,11 +3,11 @@ import streamlit as st
 from utils import load_chain
 
 # Custom image for the app icon and the assistant's avatar
-company_logo = 'https://blendle.com/img/packaging/android-touch-icon-196x196.png'
+company_logo = 'https://media.discordapp.net/attachments/973058108114997269/1215407950663917628/1689743448626.png?ex=65fca3dc&is=65ea2edc&hm=864579673f12faf82ce26cc73910fb3ca15a0ee788d88ae793d54691632cc3e5&=&format=webp&quality=lossless&width=350&height=350'
 
 # Configure streamlit page
 st.set_page_config(
-    page_title="Your Notion Chatbot",
+    page_title="Minhtendo Chatbot",
     page_icon=company_logo
 )
 
@@ -19,7 +19,7 @@ if 'chain' not in st.session_state:
 if 'messages' not in st.session_state:
     # Start with first message from assistant
     st.session_state['messages'] = [{"role": "assistant", 
-                                  "content": "Hi human! I am Blendle's smart AI. How can I help you today?"}]
+                                  "content": "Hi human! I am Minhtendo's smart AI. How can I help you today?"}]
 
 # Display chat messages from history on app rerun
 # Custom avatar for the assistant, default avatar for user
